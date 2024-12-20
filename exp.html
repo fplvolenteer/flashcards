@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Styled List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            width: 1050px;
+            background-color: #f5f5f5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            color: black;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            height: 20px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e8f5e9a7;
+        }
+
+        tr:hover {
+            background-color: #7a6b3b36
+        }
+
+        .status {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .question .status {
+            background-color: #83723bc6;
+        }
+
+        .answer .status {
+            background-color: #3b836dc6;
+        }
+
+        .answer {
+            display: none;
+            padding-left: 20px; /* Décalage à droite pour la réponse */
+            background-color: #e8f5e9; /* Couleur de fond pour la réponse */
+        }
+
+        .answer:hover {
+            background-color: #e8f5e9;
+        }
+
+        .question {
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .question:hover {
+            color: #0056b3; /* Légère variation de couleur au survol */
+        }
+
+        .question:hover {
+            text-decoration: none; /* Suppression du soulignement */
+        }
+        .answer td:first-child {
+           padding-left: 40px; /* Décalage du statut vers la droite */
+        }
+        .answer td:last-child {
+            padding-left: 40px; /* Décalage de la réponse vers la droite */
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flash Cartes de module "Culture and art skills"</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>1. Quels sont les principaux éléments discutés dans le contenu éducatif sur le Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les principaux éléments sont l'histoire du Maroc et son art et patrimoine culturel.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>2. Sur quoi se concentre le premier élément de la structure du module concernant le Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il se concentre sur l'histoire du Maroc, spécifiquement son tableau géographique et ses périodes.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>3. Quels sont les deux principaux types de patrimoine discutés dans le contexte de la culture marocaine ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le patrimoine matériel et le patrimoine immatériel.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>4. Comment l'histoire du cinéma marocain se rapporte-t-elle à son patrimoine culturel ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le cinéma marocain reflète l'identité culturelle du pays et ses récits historiques.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>5. Quels sont les objectifs clés de l'étude de l'histoire marocaine selon le module ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Développer le patriotisme, identifier la richesse culturelle, comprendre les périodes historiques, se familiariser avec la géographie, verbaliser l'histoire, reconnaître les figures artistiques et comprendre le patrimoine culturel.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>6. Pourquoi est-il important de se familiariser avec la disposition géographique du Maroc dans le contexte de son histoire ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Se familiariser avec la géographie aide à contextualiser les événements historiques et les développements culturels dans des lieux spécifiques.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>7. Quelle est la définition de la culture dans le contexte de la géographie ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La culture fait référence aux croyances, valeurs, normes et pratiques partagées d'un groupe de personnes qui façonnent leur mode de vie.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>8. Comment la culture influence-t-elle les paysages géographiques ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La culture peut façonner les paysages géographiques à travers l'architecture, l'utilisation des terres et les pratiques de gestion des ressources.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>9. Quelle est la définition de la culture selon Édouard Herriot ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La culture est ce qui reste lorsque tout le reste est oublié.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>10. Que signifie 'culture matérielle' ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La culture matérielle fait référence aux objets, techniques et productions matérielles qui caractérisent une société.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>11. Que signifie 'culture immatérielle' ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La culture immatérielle fait référence à l'ensemble des valeurs, croyances, traditions, connaissances, compétences et expressions artistiques qui caractérisent une société.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>12. Comment l' 'identité culturelle' est-elle liée à la culture matérielle ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'identité culturelle est le sentiment d'appartenance à une culture, qui inclut des valeurs, croyances et traditions partagées, souvent reflétées dans la culture matérielle.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>13. Quelles sont les principales influences sur la culture marocaine mentionnées dans le pdf ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les principales influences sur la culture marocaine incluent les traditions berbères, l'arrivée de l'islam et les contacts historiques avec l'Europe et l'Afrique subsaharienne.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>14. Comment l'arrivée de l'islam a-t-elle impacté la culture marocaine ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'arrivée de l'islam a introduit la langue arabe, la religion musulmane et de nouvelles formes artistiques et architecturales dans la culture marocaine.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>15. Quelles sont les deux langues officielles du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Arabe et berbère</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>16. Quel aspect significatif de la culture marocaine met en valeur sa diversité ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les métiers traditionnels et les expressions artistiques</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>17. Quelles influences culturelles ont façonné le Maroc pré-islamique ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Berbères, Carthage et Rome ont fortement influencé le Maroc pré-islamique.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>18. Qui étaient les Berbères dans le contexte du Maroc pré-islamique ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Berbères étaient les peuples autochtones du Maroc et ont joué un rôle crucial dans son histoire précoce.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>19. Quelles sont les caractéristiques culturelles des Berbères ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Berbères sont connus pour leur riche diversité culturelle, leur fort attachement à la terre, un sens aigu de l'honneur et une grande hospitalité.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>20. Quels royaumes significatifs les Berbères ont-ils établis dans l'Antiquité ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Berbères ont fondé des royaumes puissants tels que la Maurétanie et la Numidie.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>21. Quel impact a eu Carthage sur la culture berbère pendant le premier millénaire avant J.-C. ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Carthage a influencé la culture berbère par l'augmentation du commerce et les échanges culturels, en particulier dans l'artisanat et l'architecture.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>22. Quel a été l'impact de la conquête romaine sur l'Afrique du Nord, en particulier le Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La conquête romaine a conduit à l'intégration du Maroc dans l'Empire romain, entraînant un développement urbain, des avancées agricoles, et l'introduction de la culture romaine.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>23. Quel impact le christianisme a-t-il eu sur les royaumes berbères en Afrique du Nord ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le christianisme a conduit à la conversion de nombreux Berbères et à la formation de royaumes berbères chrétiens.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>24. Comment la communauté juive a-t-elle influencé la culture marocaine pendant la période pré-islamique ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La communauté juive a apporté sa culture et ses traditions, contribuant à la diversité culturelle du Maroc.</td>
+            </tr>
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>25. Quels ont été les principaux impacts de l'arrivée de l'Islam au Maroc au cours du 7ème siècle ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'arrivée de l'Islam a transformé l'organisation politique, la culture, la religion et l'art du Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>26. Quels étaient les objectifs de l'étude de l'arrivée de l'Islam au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Comprendre le contexte historique, identifier les étapes de la conquête, analyser la conversion berbère et découvrir les impacts des premières dynasties islamiques.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>27. Quel événement significatif a marqué l'arrivée de l'Islam au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'arrivée de l'Islam au Maroc a marqué un tournant majeur dans l'histoire du pays au cours du 7ème siècle.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>28. Quel rôle les armées musulmanes ont-elles joué dans l'expansion de l'Islam en Afrique du Nord ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les armées musulmanes, motivées par la foi et la conquête, ont lancé des campagnes pour conquérir l'Afrique du Nord, y compris le Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>29. Qui a dirigé la conquête musulmane du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Oqba Ibn Nafi</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>30. Quelle était une bataille significative lors de la conquête musulmane du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La bataille de Volubilis en 708</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>31. Quels étaient certains des avantages pour les Berbères qui se convertissaient à l'islam au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les convertis à l'islam bénéficiaient d'exemptions fiscales et d'accès à des postes administratifs.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>32. Comment l'arrivée de l'islam a-t-elle influencé la société berbère au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le message de l'islam sur l'égalité et la justice sociale a séduit de nombreux Berbères marginalisés, conduisant à leur conversion.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>33. Quel rôle les dynasties islamiques ont-elles joué dans l'histoire marocaine ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Elles ont unifié le pays, développé l'économie, promu l'art et la culture, et laissé un héritage architectural remarquable.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>34. Quelle dynastie est mentionnée comme la première dynastie islamique significative au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Idrissides (788-974).</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>35. Qui a fondé la dynastie des Idrissides au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Idris I</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>36. Quelle a été l'importance de la ville de Fès pendant la dynastie des Idrissides?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Fès est devenue un important centre religieux, intellectuel et commercial.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>37. Qui a fondé la dynastie almoravide ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Abdallah Ibn Yasin</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>38. Quel est un héritage architectural significatif laissé par les Almoravides ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La mosquée Koutoubia à Marrakech</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>39. Qui a fondé la dynastie almohade ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Ibn Tumart</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>40. Quel héritage architectural la dynastie almohade a-t-elle laissé derrière elle ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La Giralda de Séville et la Tour Hassan de Rabat</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>41. Quel a été l'impact de la dynastie mérinide sur les villes marocaines ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La dynastie mérinide a embelli des villes comme Fès et Meknès en construisant des mosquées, des médersas et des palais.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>42. Comment la dynastie mérinide a-t-elle contribué au développement culturel de Fès ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Fès est devenue un centre intellectuel renommé attirant des érudits et des étudiants du monde musulman grâce au soutien des Mérinides.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>43. Quelle a été l'importance d'Ahmed al-Mansur Dhahbi dans la dynastie saadienne ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il a marqué le sommet de la dynastie saadienne et a dirigé des campagnes militaires réussies en Afrique subsaharienne.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>44. Quel héritage architectural la dynastie saadienne a-t-elle laissé derrière elle ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Ils sont connus pour les Tombeaux saadiennes à Marrakech, un chef-d'œuvre de l'art décoratif islamique.</td>
+            </tr>
+
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>45. Quelle est l'importance d'Ali Ibn Abi Talib et de Fatima Zahra par rapport à la dynastie alaouite ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Ils sont considérés comme les ancêtres de la dynastie alaouite, la liant directement au Prophète Muhammad.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>46. Comment la dynastie alaouite affirme-t-elle sa légitimité ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>En revendiquant une descendance directe de la famille du Prophète Muhammad.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>47. D'où sont originaires les Alaouites ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Alaouites sont originaires de la région de Tafilet, au sud-est du Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>48. Quelle est l'importance de la région de Tafilet par rapport aux Alaouites ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La région de Tafilet est le lieu de naissance de la dynastie alaouite.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>49. Qui était l'ancêtre fondateur qui a consolidé l'autorité dans la région du Tafilalet ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Moulay Ali Cherif</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>50. Au cours de quel siècle Moulay Ali Cherif a-t-il consolidé son autorité dans la région du Tafilalet ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>XVIIe siècle</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>51. Qui a unifié le Maroc en 1666 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Moulay Rachid</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>52. Quel événement significatif s'est produit au Maroc en 1666 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'accession au pouvoir de Moulay Rachid.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>53. Quelle était l'importance des efforts d'unification de Moulay Rachid ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les efforts d'unification de Moulay Rachid étaient significatifs car ils ont contribué à consolider le pouvoir au Maroc et à établir une autorité plus centralisée.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>54. Comment Moulay Rachid a-t-il contribué à la dynastie alaouite ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Moulay Rachid a contribué à la dynastie alaouite en élargissant son influence et en consolidant son règne sur le Maroc par des moyens militaires et diplomatiques.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>55. Qui était Moulay Ali Cherif et quelle était son importance dans l'histoire marocaine ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Moulay Ali Cherif était le fondateur de la dynastie alaouite et le premier sultan alaouite du Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>56. Quelles ont été les principales réalisations de Moulay Rachid pendant son règne ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Moulay Rachid a réuni le Maroc et centralisé le pouvoir après des conflits internes suite à la dynastie saadienne.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>57. Quelles réformes significatives Moulay Ismaïl a-t-il mises en œuvre pendant son règne ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il a renforcé l'autorité centrale et construit une armée puissante connue sous le nom de Guichs.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>58. Comment Moulay Ismaïl a-t-il contribué au développement de Meknès ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il a établi Meknès comme la capitale impériale avec des constructions monumentales.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>59. Quelles étaient les principales relations diplomatiques établies pendant le règne de Moulay Mohammed ben Abdallah ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il a établi des relations diplomatiques plus étroites avec les puissances européennes, notamment la France et l'Espagne.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>60. Quels défis Moulay Slimane a-t-il rencontrés pendant son règne ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il a fait face à des tensions avec l'Empire ottoman, à des rébellions internes et à des incursions étrangères.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>61. Quels étaient les principaux défis auxquels le Maroc a été confronté pendant le règne de Moulay Abdelaziz ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Moulay Abdelaziz a fait face à une instabilité interne, à des révoltes et à des pressions des puissances coloniales européennes.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>62. Comment le règne de Moulay Youssef a-t-il eu un impact sur l'indépendance du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le règne de Moulay Youssef a vu la colonisation progressive du Maroc par la France et l'Espagne, sapant son indépendance.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>63. Qui était l'un des dirigeants les plus importants de l'histoire moderne du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Moulay Mohammed V</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>64. Quel changement majeur Moulay Mohammed V a-t-il mis en œuvre après l'indépendance du Maroc en 1956 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il a établi une monarchie constitutionnelle et initié des réformes de modernisation.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>65. Quel événement significatif Hassan II a-t-il supervisé en 1975 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La Marche Verte.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>66. Combien de temps Hassan II a-t-il régné en tant que roi du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Près de 40 ans.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>67. Quel changement constitutionnel significatif a eu lieu au Maroc en 2011 sous Mohammed VI ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'adoption d'une nouvelle constitution qui a renforcé les droits civils et politiques.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>68. Quelles sont quelques initiatives clés de modernisation entreprises par Mohammed VI au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les initiatives incluent le développement du TGV et des projets d'énergie renouvelable comme Noor à Ouarzazate.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>69. Quel titre portent les dirigeants qui signifie leur autorité spirituelle et politique en Islam ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Amir al-Mouminine (Commandant des Croyants)</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>70. Comment la filiation au Prophète Mohammed affecte-t-elle l'autorité de certains dirigeants en Islam ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Elle confère une autorité spirituelle et politique.</td>
+            </tr>
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>71. Comment la dynastie des CeOe a-t-elle contribué à la stabilité politique du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Elle a aidé à préserver l'unité territoriale et l'identité marocaine pendant plus de trois siècles.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>72. Quelles sont deux caractéristiques clés de la dynastie des CeOe qui ont contribué à sa longévité ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Flexibilité et adaptabilité.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>73. Comment les Alaouites ont-ils maintenu leur pouvoir malgré les défis ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Alaouites ont maintenu leur pouvoir grâce à la flexibilité et l'adaptabilité face aux défis internes et externes.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>74. Quel rôle les dynasties islamiques ont-elles joué dans le développement du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les dynasties islamiques ont été cruciaux dans la formation du paysage politique, économique, culturel et religieux du Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>75. Quelles ont été les principales contributions des dynasties islamiques à la culture et au patrimoine du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les dynasties islamiques ont unifié le territoire, repoussé les invasions étrangères, encouragé le commerce, promu l'art et la culture, et laissé un héritage architectural exceptionnel.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>76. Comment les dynasties ont-elles impacté le paysage géographique et culturel du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Chaque dynastie a laissé sa marque, contribuant à la richesse et à la diversité de la culture et du patrimoine marocains.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>77. Quel événement significatif a eu lieu au Maroc en 1912 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'établissement du protectorat franco-espagnol.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>78. Pourquoi la période avant 1912 est-elle importante pour comprendre la colonisation du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Elle révèle les conditions et transformations auxquelles le Maroc a fait face en raison des pressions européennes au 19ème siècle.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>79. Quel événement significatif s'est produit au Maroc en 1912 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'établissement du protectorat franco-espagnol.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>80. Pourquoi est-il important d'étudier la période précoloniale du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Cela aide à comprendre les conditions menant à la colonisation et les transformations au cours du XIXe siècle.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>81. Quel était le rôle du Sultan dans l'organisation politique du Maroc précolonial ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le Sultan était l'autorité centrale responsable du maintien de l'ordre, de la défense du territoire et de la prospérité du pays.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>82. Comment les provinces du Maroc étaient-elles organisées sous le système Makhzen ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les provinces étaient divisées en beyliks, chacun gouverné par un bey nommé par le Sultan.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>83. Quels étaient les principaux produits agricoles du Maroc précolonial ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les principaux produits agricoles étaient les céréales (blé, orge), les fruits (olives, dattes, agrumes) et les légumes.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>84. Comment le secteur artisanal était-il organisé au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le secteur artisanal était organisé à travers des corporations qui régulaient et structuraient le travail des artisans.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>85. Quels étaient les principaux intérêts économiques des puissances européennes au Maroc au cours du 19ème siècle ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les puissances européennes s'intéressaient au Maroc pour ses ressources naturelles, ses produits agricoles, ses opportunités commerciales et sa position stratégique.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>86. Comment le Maroc a-t-il tenté de maintenir son indépendance face aux pressions européennes ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le Maroc a employé des stratégies diplomatiques, jouant les puissances européennes les unes contre les autres et signant des traités comme le Traité de Lalla Maghnia avec la France.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>87. Quelles étaient les deux principales zones d'influence au Maroc durant le protectorat colonial ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les deux principales zones d'influence étaient la zone française et la zone espagnole.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>88. Quelles ont été certaines des conséquences du protectorat colonial sur la société marocaine ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le protectorat a créé une société dualiste, a augmenté les inégalités sociales et a conduit à un exode rural massif.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>89. Quelle était la principale forme de résistance armée au Maroc contre la domination coloniale entre 1921 et 1926 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La principale forme de résistance armée était la guerre du Rif, dirigée par Abd el Krim el-KhaOabi.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>90. Quel rôle le Parti de l'Istiqlal a-t-il joué dans la résistance du Maroc à la colonisation ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le Parti de l'Istiqlal était central dans le mouvement nationaliste plaidant pour l'indépendance du Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>91. Quel était l'objectif principal du mouvement nationaliste marocain après la Seconde Guerre mondiale ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'objectif principal était de mettre fin au Protectorat et d'obtenir l'indépendance pour le Maroc.</td>
+            </tr>
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>92. Quand l'indépendance marocaine a-t-elle été proclamée et qui est devenu le premier roi ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'indépendance marocaine a été proclamée le 2 mars 1956 et le Sultan Mohammed V est devenu le premier roi du Maroc indépendant.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>93. Quels sont les principaux avantages politiques du Maroc contemporain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Stabilité politique et coopération régionale.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>94. Quels sont les potentiels économiques du Maroc contemporain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Tourisme, agriculture, énergies renouvelables, et une industrie diversifiée.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>95. Que reflète la riche tradition artistique du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>La riche tradition artistique du Maroc reflète la diversité culturelle du pays.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>96. Quelles sont les expressions artistiques traditionnelles au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les expressions artistiques traditionnelles au Maroc comprennent diverses formes d'art qui se sont développées au fil des siècles, mettant en valeur l'héritage culturel du pays.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>97. Qu'est-ce que les Zelliges et où sont-ils couramment utilisés ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les Zelliges sont des carreaux de mosaïque colorés souvent utilisés dans les palais, mosquées, et riads au Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>98. Quelle est la signification des bijoux traditionnels marocains ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les bijoux traditionnels marocains, souvent en argent, or, et pierres précieuses, symbolisent l'identité tribale.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>99. Quels sont les principaux thèmes explorés dans le théâtre marocain contemporain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le théâtre marocain contemporain explore des questions sociales, politiques et culturelles, telles que l'identité, les inégalités sociales, les libertés individuelles et les tensions entre tradition et modernité.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>100. Qui sont quelques figures notables de l'art marocain contemporain et quelles contributions ont-elles apportées ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les figures notables incluent Tayeb Saddiki, considéré comme le père du théâtre marocain moderne, et des artistes comme Hassan Hajjaj et Farid Belkahia, qui mélangent influences traditionnelles et modernes dans leurs œuvres.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>101. Quel est le premier film tourné au Maroc et qui l'a dirigé ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le premier film tourné au Maroc était 'Meknès' dirigé par Louis Lumière en 1919.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>102. Quel développement significatif a eu lieu dans le cinéma marocain après l'indépendance en 1956 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>L'établissement d'un cinéma national avec la création du Centre Cinématographique Marocain (CCM) en 1944.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>103. Quel est le sujet du Chapitre 3 dans le document du Pr. Aabchane Naima ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le sujet porte sur le théâtre précolonial au Maroc.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>104. Comment le théâtre précolonial au Maroc se rapporte-t-il aux expressions contemporaines du théâtre ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Il sert de base pour comprendre le théâtre marocain moderne.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>105. Qu'est-ce que 'Al-halqa' dans le théâtre précolonial marocain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Al-halqa est une forme de performance circulaire dans les espaces publics où les conteurs s'engagent directement avec le public.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>106. Comment 'Aïta' et 'malhoun' contribuent-ils au théâtre précolonial marocain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Aïta et malhoun sont des expressions poétiques et musicales qui incluent parfois des éléments de mise en scène.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>107. Quelle a été l'influence du colonialisme français et espagnol sur le théâtre marocain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le colonialisme français et espagnol a introduit le théâtre occidental au Maroc, fortement influencé par des dramaturges classiques européens comme Molière et Racine.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>108. Qui était Ahmed Taïbi Harraq et quelle a été sa contribution au théâtre marocain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Ahmed Taïbi Harraq était l'un des premiers dramaturges marocains à utiliser le théâtre comme moyen de messages nationalistes.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>109. Quel rôle a joué Tayeb Saddiki dans le théâtre marocain après l'indépendance ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Tayeb Saddiki a intégré des éléments traditionnels marocains avec des formes théâtrales modernes.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>110. Quels thèmes ont été explorés dans le théâtre marocain lors de la période de renouveau de 1970 à 1990 ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les thèmes comprenaient la modernisation de la société, les luttes identitaires entre tradition et modernité, et les inégalités sociales.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>111. Qui est considéré comme le père du théâtre moderne marocain ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Tayeb Saddiki</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>112. Quels types de formes théâtrales le théâtre marocain a-t-il expérimentées lors de son évolution ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Formes contemporaines et avant-gardistes</td>
+            </tr>
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>119. Quelles initiatives le Maroc a-t-il mises en œuvre pour préserver son patrimoine ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le Maroc a mis en œuvre plusieurs initiatives, notamment des inscriptions auprès de l'UNESCO, la restauration de monuments historiques et la promotion de festivals et d'artisanat.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>120. Combien d'éléments immatériels et de sites culturels le Maroc a-t-il classés auprès de l'UNESCO ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Le Maroc a classé 14 éléments immatériels et 9 sites culturels auprès de l'UNESCO.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>121. Quels sont les principaux types de patrimoine matériel que l'on trouve au Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les principaux types de patrimoine matériel au Maroc comprennent des monuments historiques, des mosquées, des mausolées, des kasbahs, des riads, des palais, des jardins, de l'artisanat, des sites archéologiques et divers objets d'art.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>122. Quelles médinas marocaines sont reconnues comme sites du patrimoine mondial de l'UNESCO ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Les médinas de Fès, Marrakech, Meknès, Rabat et Essaouira sont reconnues comme sites du patrimoine mondial de l'UNESCO.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>123. Qu'est-ce qui est considéré comme faisant partie du patrimoine immatériel du Maroc ?</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Pratiques traditionnelles, coutumes sociales, expressions artistiques et événements culturels.</td>
+            </tr>
+            
+            <tr class="question" onclick="toggleRow(this)">
+                <td><span class="status"></span></td>
+                <td>124. Nommez deux exemples de la cuisine marocaine qui sont reconnus comme patrimoine immatériel par l'UNESCO.</td>
+            </tr>
+            <tr class="answer">
+                <td><span class="status"></span></td>
+                <td>Couscous et tajine.</td>
+            </tr>                                                   
+        </tbody>
+    </table>
+    <script>
+        function toggleRow(row) {
+            const nextRow = row.nextElementSibling;
+            const expanded = row.getAttribute('aria-expanded') === 'true';
+            if (nextRow && nextRow.classList.contains('answer')) {
+                nextRow.style.display = expanded ? 'none' : 'table-row';
+                row.setAttribute('aria-expanded', !expanded);
+            }
+        }
+    
+        // Add event listener to toggle answer visibility when the answer itself is clicked
+        document.querySelectorAll('.answer').forEach(answer => {
+            answer.addEventListener('click', function() {
+                const questionRow = this.previousElementSibling;
+                toggleRow(questionRow); // This will toggle the question and answer
+            });
+        });
+    </script>    
+</body>
+</html>
